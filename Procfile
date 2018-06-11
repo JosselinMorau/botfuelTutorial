@@ -1,1 +1,1 @@
-web : nmp run start botfuel-config
+web: npm run start botfuel-config
