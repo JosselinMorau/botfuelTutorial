@@ -2,10 +2,11 @@ const { View, BotTableMessage } = require('botfuel-dialog');
 
 class TabletestView extends View {
   render() {
-    return [new BotTableMessage([ { name: 'Name' }, { city: 'City' }],
-        [   { name: 'John', city: 'New York' },
-            { name: 'Peter', city: 'Paris' }
-        ])];
+    const data = { schema: [{ name: 'Name' }, { city: 'City' }] ,
+    rows: [{ name: 'John', city: 'New York' },
+    { name: 'Peter', city: 'Paris' }]
+    }
+    return [new BotTableMessage(data);
 
   }
 }
