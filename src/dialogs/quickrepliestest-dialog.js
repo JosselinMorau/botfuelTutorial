@@ -1,5 +1,5 @@
 const { BaseDialog } = require('botfuel-dialog');
 
-class Quickepliestest extends BaseDialog {}
+class Quickrepliestest extends BaseDialog {}
 
-module.exports = Quickepliestest;
+module.exports = Quickrepliestest;
