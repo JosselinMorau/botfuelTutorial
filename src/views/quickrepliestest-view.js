@@ -1,6 +1,6 @@
-const { PromptView, QuickrepliesMessage } = require('botfuel-dialog');
+const { View, QuickrepliesMessage } = require('botfuel-dialog');
 
-class QuickRepliesTestView extends PromptView {
+class QuickRepliesTestView extends View {
   render() {
 
     return [new QuickrepliesMessage(['Paris','London'],'Where do you want to go?')];
