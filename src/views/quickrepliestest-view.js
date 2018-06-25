@@ -1,6 +1,6 @@
 const { View, QuickrepliesMessage } = require('botfuel-dialog');
 
-class QuickRepliesTestView extends View {
+class QuickrepliestestView extends View {
   render() {
 
     return [new QuickrepliesMessage(['Paris','London'],'Where do you want to go?')];
@@ -8,5 +8,5 @@ class QuickRepliesTestView extends View {
   }
 }
 
-module.exports = QuickRepliesTestView;
+module.exports = QuickrepliestestView;
 
