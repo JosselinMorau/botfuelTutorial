@@ -1,23 +1,10 @@
-const { View, CardsMessage, Card, Link, Postback } = require('botfuel-dialog');
+const { View, BotImageMessage } = require('botfuel-dialog');
 
-class ActiontestView extends View {
+class CardtestView extends View {
   render() {
-
-    const cards = [
-        new Card('Top hat', 'https://www.villagehatshop.com/photos/product/standard/4511390S416258/all/vent-grade-8-panama-straw-outback-hat.jpg', [
-          new Postback('Buy', 'products', [{ dim: 'product', values: ['product_1'] }]),
-        ]),
-        new Card('Cowboy hat', 'https://www.villagehatshop.com/photos/product/standard/4511390S416258/all/vent-grade-8-panama-straw-outback-hat.jpg', [
-          new Postback('Buy', 'products', [{ dim: 'product', values: ['product_2'] }]),
-        ]),
-        new Card('Detective hat', 'https://www.villagehatshop.com/photos/product/standard/4511390S416258/all/vent-grade-8-panama-straw-outback-hat.jpg', [
-          new Postback('Buy', 'products', [{ dim: 'product', values: ['product_3'] }]),
-        ]);
-    ];
-
-    return [new CardsMessage(cards)];
+    return [new BotImageMessage('https://www.rei.com/media/0df5ec8e-e55e-4e63-8e6e-ee55cc695cbe?size=784x588')];
 
   }
 }
 
-module.exports = ActiontestView;
+module.exports = CardtestView;
