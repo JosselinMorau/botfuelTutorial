@@ -5,22 +5,20 @@ class TabletestView extends View {
     const data = {
       schema: [
         {
-          key: 'name',
-          label: 'Name',
+          name: 'Name',
         },
         {
-          key: 'job',
-          label: 'Job title',
+          city: 'City',
         },
       ],
       rows: [
         {
-          name: 'John Doe',
-          job: 'Plumber',
+          name: 'John',
+          city: 'New York',
         },
         {
-          name: 'Jane Doe',
-          job: 'Designer',
+          name: 'Peter',
+          city: 'Paris',
         },
       ],
     };

@@ -1,4 +1,4 @@
-const { View, ActionsMessage, Link, Postback } = require('botfuel-dialog');
+const { View, ActionsMessage, Link, Postback  } = require('botfuel-dialog');
 
 class ActiontestView extends View {
   render() {
